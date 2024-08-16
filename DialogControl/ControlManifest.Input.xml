@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="sa" constructor="DialogControl" version="0.0.2" display-name-key="DialogControl" description-key="DialogControl description" control-type="virtual">
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <!-- Property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="InputOutputValue" display-name-key="Field" description-key="Field" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="titleText" display-name-key="Title" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="descriptionText" display-name-key="Description" of-type="Multiple" usage="input" required="false" />
+    <property name="options" display-name-key="Options" usage="input" required="true" of-type="Multiple" description-key="Pass Options in this Format - All parameters are Optional except key &#xA;&#xD;&#xA;        (for icon ref - https://developer.microsoft.com/en-us/fluentui#/styles/web/icons ) : &#xA;&#xD;&#xA;        [&#xA;&#xD;&#xA;            {&#xA;&#xD;&#xA;                &quot;key&quot;: &quot;A&quot;, &#xA;&#xD;&#xA;                &quot;iconProps&quot;: { &quot;iconName&quot;: &quot;CalendarDay&quot; }, &#xA;&#xD;&#xA;                &quot;text&quot;: &quot;Day&quot;, &#xA;&#xD;&#xA;                &quot;disabled&quot;: true, &#xA;&#xD;&#xA;                &quot;description&quot;: &quot;Select a specific day to view or manage your activities. This option allows you to focus on tasks scheduled for today or any chosen day in the calendar.&quot; &#xA;&#xD;&#xA;            }, &#xA;&#xD;&#xA;            {&#xA;&#xD;&#xA;                &quot;key&quot;: &quot;B&quot;, &#xA;&#xD;&#xA;                &quot;iconProps&quot;: { &quot;iconName&quot;: &quot;ChangeEntitlements&quot; }, &#xA;&#xD;&#xA;                &quot;text&quot;: &quot;Change Entitlements&quot;, &#xA;&#xD;&#xA;                &quot;description&quot;: &quot;Modify the entitlements associated with a user or group. This includes adding or removing permissions to ensure that the right access is granted based on current requirements.&quot; &#xA;&#xD;&#xA;            }, &#xA;&#xD;&#xA;            {&#xA;&#xD;&#xA;                &quot;key&quot;: &quot;C&quot;, &#xA;&#xD;&#xA;                &quot;iconProps&quot;: { &quot;iconName&quot;: &quot;Calendar&quot; }, &#xA;&#xD;&#xA;                &quot;text&quot;: &quot;Month&quot;, &#xA;&#xD;&#xA;                &quot;description&quot;: &quot;View activities organized by month. This option helps in planning and reviewing your schedule over a broader timeframe, making it easier to track deadlines and appointments.&quot; &#xA;&#xD;&#xA;            }, &#xA;&#xD;&#xA;            {&#xA;&#xD;&#xA;                &quot;key&quot;: &quot;D&quot;, &#xA;&#xD;&#xA;                &quot;iconProps&quot;: { &quot;iconName&quot;: &quot;Add&quot; }, &#xA;&#xD;&#xA;                &quot;text&quot;: &quot;Add Item&quot;, &#xA;&#xD;&#xA;                &quot;description&quot;: &quot;Add a new item to your list or inventory. This option enables you to expand your resources and manage additional entries efficiently within the application.&quot; &#xA;&#xD;&#xA;            }&#xA;&#xD;&#xA;        ]" />
+    <property name="dialogType" display-name-key="Dialog Type" description-key="Dialog Type" of-type="Enum" usage="input" required="false" default-value="0">
+      <value name="Normal" display-name-key="Normal" description-key="Normal">0</value>
+      <value name="largeHeader" display-name-key="Large Header" description-key="Large Header">1</value>
+      <value name="close" display-name-key="Close" description-key="Close">2</value>
+    </property>
+    <property name="openDialogButtonLabel" display-name-key="Open Dialog Button Label" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="saveBtnLabel" display-name-key="Save Button Label" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="cancelBtnLabel" display-name-key="Cancel Button Label" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="minWidth" display-name-key="Minimum Width" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="maxWidth" display-name-key="Maximum Width" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="isShowDialogButtonVisible" display-name-key="Show Dialog Button Visible" description-key="Show Dialog Button visibility on form" of-type="TwoOptions" usage="input" required="true" />
+    <property name="hideOnOutsideClick" display-name-key="Hide On Outside Click" of-type="TwoOptions" usage="input" required="true" />
+    <property name="isDailogDraggable" display-name-key="Dialog Draggable" of-type="TwoOptions" usage="input" required="true" />
+    <property name="isDailogKeepInBounds" display-name-key="Dialog Keep In Screen" of-type="TwoOptions" usage="input" required="true" />
+    <property name="isTopOffsetFixed" display-name-key="Top Offset Fixed" description-key="Top Always Fixed" of-type="TwoOptions" usage="input" required="true" />
+    <resources>
+      <code path="index.ts" order="1" />
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/DialogControl.css" order="1" />
+      <resx path="strings/DialogControl.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+  </control>
+</manifest>
