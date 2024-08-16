@@ -40,7 +40,8 @@ PCF-AdvanceDialogControl is ideal for applications requiring a customizable dial
 
 For available icons, see the [Fluent UI Icon Gallery](https://developer.microsoft.com/en-us/fluentui#/styles/web/icons).
 
-[Managed Solution](https://github.com/SahilATech/AdDialogControl/blob/fccf1ec2388c2e80b35981cba172c25c795a2455/solutions_managed.zip)
+[Managed Solution](https://github.com/SahilATech/AdDialogControl/raw/fccf1ec2388c2e80b35981cba172c25c795a2455/solutions_managed.zip
+)
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
