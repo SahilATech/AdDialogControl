@@ -21,11 +21,13 @@
 - **Dialog Draggable**: Enables dragging of the dialog window.
 - **Minimum Width**: Sets the minimum width of the dialog.
 - **Maximum Width**: Sets the maximum width of the dialog.
-- **Top Offset Fixed**: Keeps the dialog's top offset fixed during showing the selected choice description.
+- **Top Offset Fixed**: Keeps the dialog's top offset fixed while showing the selected choice description.
 - **Open Dialog Button Label**: Label for the button used to open the dialog.
 - **Save Button Label**: Label for the save button within the dialog.
 - **Cancel Button Label**: Label for the cancel button within the dialog.
 - **Show Dialog Button Visible**: Controls the visibility of the button that triggers the dialog.
+![MultiselectPcf](https://github.com/SahilATech/AdDialogControl/blob/83fa44a06186841f468b9fd5c1c982240d5be3ea/Images/DialogProperties_1.png)
+![MultiselectPcf](https://github.com/SahilATech/AdDialogControl/blob/83fa44a06186841f468b9fd5c1c982240d5be3ea/Images/DialogProperties_2.png)
 
 ## Customization
 
@@ -34,9 +36,44 @@
   - **cancelFunctionOverride**: Override the default cancel functionality.
   - **DismissFunctionOverride**: Override the default dismiss functionality.
 
+- **global Object - pcfDialogControl_{logicalNameofField} (in screenshot sa_name)**
+
+![OverrideFunction](https://github.com/SahilATech/AdDialogControl/blob/3fcf6c9fcd6ea91719610c441e0257273ea12249/Images/OverrideFunction.png)
+
+**Override save function**
+
+![OverrideFunctionExample](https://github.com/SahilATech/AdDialogControl/blob/3fcf6c9fcd6ea91719610c441e0257273ea12249/Images/OverrideFunctionExample.png)
+
+You can also utilize the global `pcfDialogControl_{logicalNameofField}` object for additional functionality:
+  - **Show Dialog**: You can programmatically open the dialog using JavaScript without requiring a button click.
+  - **Get Current and Previous Choices**: Access the current selected choice and the previous choice stored in CDS (Common Data Service) using the global object.
+
 ## Usage
 
 PCF-AdvanceDialogControl is ideal for applications requiring a customizable dialog component where users need to select from a range of options. The control allows for extensive customization, including the ability to modify button labels, manage dialog behavior, and handle various interaction scenarios.
+
+**Dialog Open Button**
+![Dialog Open Button](https://github.com/SahilATech/AdDialogControl/blob/83fa44a06186841f468b9fd5c1c982240d5be3ea/Images/DialogOpenButton.png)
+ 
+ **Dialog Box**
+
+ 
+![Dialog Box](https://github.com/SahilATech/AdDialogControl/blob/83fa44a06186841f468b9fd5c1c982240d5be3ea/Images/DialogBox.png)
+
+**Dialog Box Without Title**
+
+
+![Dialog Box Without Title](https://github.com/SahilATech/AdDialogControl/blob/83fa44a06186841f468b9fd5c1c982240d5be3ea/Images/DialogBoxWithoutTitle.png)
+
+**Option Description**
+
+
+![Option Description](https://github.com/SahilATech/AdDialogControl/blob/83fa44a06186841f468b9fd5c1c982240d5be3ea/Images/DialogOptionDescription.png)
+
+**Dialog Options Without Icons**
+
+
+![Dialog Options Without Icons](https://github.com/SahilATech/AdDialogControl/blob/83fa44a06186841f468b9fd5c1c982240d5be3ea/Images/DialogOptionWithoutIcon.png)
 
 For available icons, see the [Fluent UI Icon Gallery](https://developer.microsoft.com/en-us/fluentui#/styles/web/icons).
 
